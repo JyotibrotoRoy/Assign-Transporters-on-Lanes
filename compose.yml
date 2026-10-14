@@ -1,0 +1,21 @@
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: freightfox-postgres
+    environment:
+      POSTGRES_DB: freightfox_assignment
+      POSTGRES_USER: freightfox
+      POSTGRES_PASSWORD: local_dev_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - freightfox_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U freightfox -d freightfox_assignment"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  freightfox_data:
