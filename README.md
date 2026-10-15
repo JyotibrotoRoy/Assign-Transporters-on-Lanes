@@ -6,7 +6,7 @@ number of distinct transporters.
 
 -   **Live API:** https://assign-transporters-on-lanes.onrender.com
 -   **Swagger UI:** https://assign-transporters-on-lanes.onrender.com/swagger-ui/index.html
--   **Demo video (Loom):** `ADD_LOOM_LINK`
+-   **Demo video (Loom):** https://www.loom.com/share/e8fcbcd638d241f091b149a725a60915
 
 > A free hosting tier may
 > put the service to sleep when idle, so the first request after a pause
